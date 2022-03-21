@@ -26,8 +26,8 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 
     Library : *Baileys-MD*.
     Prefix : ( ${prefix} )
-    Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-    Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+    Tanggal : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+    Waktu : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
 
 	Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
 	Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
